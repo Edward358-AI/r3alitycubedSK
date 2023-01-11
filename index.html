@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Welcome to the Home of r3alitycubedSK" >
+  <style>
+    html {
+      visibility: hidden;
+      opacity: 0;
+    }
+  </style>
+  <script src="js/header.js"></script>
+  <title>Home of r3alitycubedSK</title>
+  <link rel="icon" type="image/x-icon" href="r3alitycubedsk.png" defer>
+  </link>
+  <link id="css" href="css/index.css" rel="stylesheet" type="text/css">
+  </link>
+</head>
+
+<body>
+  <p style="margin:10px;text-align:center;">Load times may be slow - really slow because the theme switcher makes it slow, especially games page, also if your window is too small the menu bar won't show fully</p>
+  <div class="mainstuff">
+    <p style="font-family: Cedarville Cursive, cursive"><i>Welcome to the Home of r3alitycubed!</i></p>
+    <i>
+      <p id="goodmorning"></p>
+    </i>
+    <p><i>My name is Edward Jiang. Press the button below to find out more about me!</i></p>
+    <a href="ac.html"><button id="aboutbutton"><i>About...</i></button></a>
+  </div>
+</body>
+<script>
+  function goodmonring() {
+    var dez = new Date();
+    var hrs = dez.getHours();
+    var goodmorning = document.getElementById("goodmorning");
+    if (hrs < 12 || hrs == 0) {
+      goodmorning.innerHTML = "Good Morning.";
+    }
+    else if (hrs >= 12 && hrs < 18) {
+      goodmorning.innerHTML = "Good Afternoon.";
+    }
+    else if (hrs >= 18) {
+      goodmorning.innerHTML = "Good Night.";
+    }
+    setTimeout(goodmonring, 3600)
+  }
+  goodmonring();
+</script>
+
+</html>
